@@ -3,24 +3,19 @@
     margin: 5px 0;
     box-sizing: border-box;
 }
-
 .container {
     padding: 0px 30px;
 }
-
 .c-navbar {
     display: flex;
     background-color: rgb(255, 254, 254);
     justify-content: space-between;
-
     &__image {
         width: 75px;
     }
-
     &__menu-header {
         display: flex;
     }
-
     &__hamburger {
         background: transparent;
         border: 0;
@@ -29,11 +24,9 @@
         cursor: pointer;
         display: none;
     }
-
     &__hamburger:focus {
         outline: none;
     }
-
     &__menu {
         display: flex;
         list-style: none;
@@ -44,7 +37,6 @@
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
     }
-
     &__home {
         &--hover:hover {
             color: green;
@@ -54,12 +46,10 @@
             padding: 3px 3px 3px 3px
         }
     }
-
     &__registration {
         display: flex;
         align-items: center;
     }
-
     &__button {
         padding: 14px;
         border-radius: 85px;
@@ -68,13 +58,34 @@
         border: none;
         font-weight: 600;
     }
-
     &__hamburgaremenu {
         display: none;
     }
 }
-
-@media screen and (max-device-width:1024px) and (min-width:768px) {
+.c-banner {
+    &__background {
+        background-image: url('banner2.jpg');
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    &__heading {
+        position: absolute;
+        left: 57%;
+        top: 62%;
+        transform: translate(-23%, -50%);
+        z-index: 0;
+        font-family: 'Poppins';
+    }
+}
+@media screen and (max-device-width:1024px) and (min-width:600px) {
+    li {
+        margin-top: 20px;
+    }
     .c-navbar {
         &__menu {
             display: none;
@@ -85,49 +96,62 @@
             display: flex;
             width: 100%;
             position: fixed;
-            top: 80px;
+            top: 100px;
+            left: 0;
             flex-direction: column;
-            left: 10px;
-           
             transform: translateY(-180%);
             transition: transform 0.4s ease;
+            border: 1px solid black;
+            background: black;
+            color: white;
+            border-radius: 5px;
         }
-
         &__menu.show {
             display: flex;
             transform: translateY(0);
+            z-index: 1;
         }
-
         &__image {
             width: 84px;
         }
-
         &__hamburger {
             display: block;
         }
-
         &__registration {
             display: none;
         }
-
         &__hamburgaremenu {
             display: block;
         }
-
         &__hamburgemenu-icon {
             width: 58px;
             margin-left: 47px;
         }
     }
+    //   banner
+    .c-banner {
+        &__background {
+            height: 50vh;
+        }
+        &__heading {
+            position: absolute;
+            left: 57%;
+            top: 36%;
+            -webkit-transform: translate(-23%, -50%);
+            transform: translate(-19%, -50%);
+            z-index: 0;
+            font-family: "Poppins";
+        }
+    }
 }
-
 @media only screen and (max-width: 600px) {
+    li {
+        margin-top: 20px;
+    }
     .container {
         margin: 0px 20px;
     }
-
     .c-navbar {
-
         &__menu {
             display: none;
             flex-direction: column;
@@ -139,50 +163,52 @@
             position: fixed;
             top: 80px;
             flex-direction: column;
-            left: 10px;
-            transform: translateX(180%);
+            left: 0px;
+            transform: translateY(-180%);
             transition: transform 0.4s ease;
             border: 1px solid black;
-            background: lightgray;
+            background: black;
+            color: white;
         }
-
         &__menu.show {
             display: flex;
-            transform: translateX(0);
+            transform: translateY(0);
+            z-index: 1;
         }
-
         &__image {
             width: 56px;
             display: flex;
             align-items: center;
         }
-
         &__hamburger {
             display: block;
         }
-
         &__registration {
             display: none;
         }
-
         &__hamburgaremenu {
             display: block;
         }
-
         &__hamburgemenu-icon {
             width: 58px;
             margin-left: 47px;
         }
     }
+    //   banner
+    .c-banner {
+        &__background {
+            height: 30vh;
+            background-size: 150%;
+        }
+        &__heading {
+            position: absolute;
+            left: 57%;
+            top: 26%;
+            -webkit-transform: translate(-23%, -50%);
+            transform: translate(-16%, -50%);
+            z-index: 0;
+            font-family: "Poppins";
+            font-size: 8px;
+        }
+    }
 }
-
-//                                banner
-// .c-banner{
-//     width: 100%; 
-//     height: 100%; 
-//     position: fixed; 
-//     left: 0px; 
-//     top: 0px; 
-//     z-index: -1;
-//     &__background-image{}
-// }
