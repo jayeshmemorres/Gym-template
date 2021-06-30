@@ -3,19 +3,24 @@
     margin: 5px 0;
     box-sizing: border-box;
 }
+
 .container {
     padding: 0px 30px;
 }
+
 .c-navbar {
     display: flex;
     background-color: rgb(255, 254, 254);
     justify-content: space-between;
+
     &__image {
         width: 75px;
     }
+
     &__menu-header {
         display: flex;
     }
+
     &__hamburger {
         background: transparent;
         border: 0;
@@ -24,9 +29,11 @@
         cursor: pointer;
         display: none;
     }
+
     &__hamburger:focus {
         outline: none;
     }
+
     &__menu {
         display: flex;
         list-style: none;
@@ -37,6 +44,7 @@
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
     }
+
     &__home {
         &--hover:hover {
             color: green;
@@ -46,10 +54,12 @@
             padding: 3px 3px 3px 3px
         }
     }
+
     &__registration {
         display: flex;
         align-items: center;
     }
+
     &__button {
         padding: 14px;
         border-radius: 85px;
@@ -58,10 +68,12 @@
         border: none;
         font-weight: 600;
     }
+
     &__hamburgaremenu {
         display: none;
     }
 }
+
 .c-banner {
     &__background {
         background-image: url('banner2.jpg');
@@ -73,19 +85,156 @@
         background-repeat: no-repeat;
         color: white;
     }
+
     &__heading {
         position: absolute;
         left: 57%;
-        top: 62%;
+        top: 74%;
         transform: translate(-23%, -50%);
         z-index: 0;
-        font-family: 'Poppins';
+        font-family: inherit;
+        line-height: 58px;
+    }
+
+    &__contact {
+        padding: 12px 35px;
+        background: none;
+        color: white;
+        border: 2px solid;
+
+        &--hover:hover {
+            color: yellow;
+        }
+    }
+
+    &__click {
+        padding: 12px 35px;
+        margin-left: 20px;
+        background: none;
+        color: white;
+        border: 2px solid;
+
+        &--hover:hover {
+            color: yellow;
+        }
+    }
+
+    &__button {
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 }
+
+.c-about {
+    padding: 10px 20px;
+
+    &__button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__aboutus-button {
+        background: transparent;
+        padding: 15px 39px;
+        border: 3px inset #2CC73B;
+        font-size: 24px;
+
+    }
+
+    &__aboutbgimage {
+        background-image: url('about-bg.jpg');
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    &__images {
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    &__image {
+        margin: 0 auto;
+        width: 45%;
+    }
+}
+
+.c-help {
+    margin-top: 100px;
+    padding: 10px 20px;
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+    &__heading {
+       
+        font-family: 'Shadows Into Light', cursive;
+    }
+
+    &__nutrition {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+    }
+
+    &__nutritionpartone {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__nutritionpartsecond {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 35px;
+    }
+
+    &__nutritionpartone-iconone {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nutritionpartone-icontwo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nutritionpartone-iconthree {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nutritionpartone-iconfour {
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        margin-left: 30px;
+        padding-bottom: 51px;
+        padding-top: 20px;
+    }
+}
+
 @media screen and (max-device-width:1024px) and (min-width:600px) {
     li {
         margin-top: 20px;
     }
+
     .c-navbar {
         &__menu {
             display: none;
@@ -106,51 +255,86 @@
             color: white;
             border-radius: 5px;
         }
+
         &__menu.show {
             display: flex;
             transform: translateY(0);
             z-index: 1;
+            height: 52vh;
         }
+
         &__image {
             width: 84px;
         }
+
         &__hamburger {
             display: block;
         }
+
         &__registration {
             display: none;
         }
+
         &__hamburgaremenu {
             display: block;
         }
+
         &__hamburgemenu-icon {
             width: 58px;
             margin-left: 47px;
         }
     }
+
     //   banner
     .c-banner {
         &__background {
             height: 50vh;
         }
+
         &__heading {
             position: absolute;
-            left: 57%;
-            top: 36%;
+            left: 31%;
+            top: 40%;
             -webkit-transform: translate(-23%, -50%);
             transform: translate(-19%, -50%);
             z-index: 0;
-            font-family: "Poppins";
+            line-height: 54px;
+        }
+
+        &__contact {
+            padding: 10px 33px;
+            background: none;
+            color: white;
+            border: 2px solid;
+        }
+
+        &__click {
+            padding: 10px 33px;
+            background: none;
+            color: white;
+            border: 2px solid;
+        }
+    }
+
+    //about
+
+    .c-about {
+
+        &__aboutbgimage {
+            height: 30vh;
         }
     }
 }
+
 @media only screen and (max-width: 600px) {
     li {
         margin-top: 20px;
     }
+
     .container {
         margin: 0px 20px;
     }
+
     .c-navbar {
         &__menu {
             display: none;
@@ -170,45 +354,111 @@
             background: black;
             color: white;
         }
+
         &__menu.show {
             display: flex;
             transform: translateY(0);
             z-index: 1;
         }
+
         &__image {
             width: 56px;
             display: flex;
             align-items: center;
         }
+
         &__hamburger {
             display: block;
         }
+
         &__registration {
             display: none;
         }
+
         &__hamburgaremenu {
             display: block;
         }
+
         &__hamburgemenu-icon {
             width: 58px;
             margin-left: 47px;
         }
     }
+
     //   banner
     .c-banner {
         &__background {
             height: 30vh;
-            background-size: 150%;
         }
+
         &__heading {
             position: absolute;
-            left: 57%;
-            top: 26%;
+            left: 31%;
+            top: 30%;
             -webkit-transform: translate(-23%, -50%);
             transform: translate(-16%, -50%);
             z-index: 0;
-            font-family: "Poppins";
-            font-size: 8px;
+            line-height: 23px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+
+        &__contact {
+            padding: 7px 15px;
+            background: none;
+            color: white;
+            border: 2px solid;
+        }
+
+        &__click {
+            padding: 7px 19px;
+            margin-left: 5px;
+            background: none;
+            color: white;
+            border: 2px solid;
+        }
+
+        &__button {
+            margin-top: 0;
+        }
+    }
+
+    .c-help {
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+        &__nutritionpartone {
+            flex-direction: column;
+        }
+
+        &__nutritionpartsecond {
+            flex-direction: column;
+        }
+    }
+
+    .c-about {
+       
+
+        &__aboutbgimage {
+            height: 16vh;
+        }
+
+        &__description {
+            margin-top: 45px;
+        }
+
+        &__aboutus-button {
+            padding: 2px 15px;
         }
     }
 }

@@ -104,11 +104,174 @@
 .c-banner__heading {
   position: absolute;
   left: 57%;
-  top: 62%;
+  top: 74%;
   -webkit-transform: translate(-23%, -50%);
           transform: translate(-23%, -50%);
   z-index: 0;
-  font-family: 'Poppins';
+  font-family: inherit;
+  line-height: 58px;
+}
+
+.c-banner__contact {
+  padding: 12px 35px;
+  background: none;
+  color: white;
+  border: 2px solid;
+}
+
+.c-banner__contact--hover:hover {
+  color: yellow;
+}
+
+.c-banner__click {
+  padding: 12px 35px;
+  margin-left: 20px;
+  background: none;
+  color: white;
+  border: 2px solid;
+}
+
+.c-banner__click--hover:hover {
+  color: yellow;
+}
+
+.c-banner__button {
+  margin-top: 25px;
+}
+
+.c-banner h1 {
+  font-size: 50px;
+}
+
+.c-banner h2 {
+  font-size: 30px;
+}
+
+.c-about {
+  padding: 10px 20px;
+}
+
+.c-about__button {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-about__aboutus-button {
+  background: transparent;
+  padding: 15px 39px;
+  border: 3px inset #2CC73B;
+  font-size: 24px;
+}
+
+.c-about__aboutbgimage {
+  background-image: url("about-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.c-about__images {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.c-about__image {
+  margin: 0 auto;
+  width: 45%;
+}
+
+.c-help {
+  margin-top: 100px;
+  padding: 10px 20px;
+}
+
+.c-help h1 {
+  text-align: center;
+}
+
+.c-help h2 {
+  text-align: center;
+}
+
+.c-help__heading {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.c-help__nutrition {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+.c-help__nutritionpartone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.c-help__nutritionpartsecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 35px;
+}
+
+.c-help__nutritionpartone-iconone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-help__nutritionpartone-icontwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-help__nutritionpartone-iconthree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-help__nutritionpartone-iconfour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-help h2 {
+  margin-left: 30px;
+  padding-bottom: 51px;
+  padding-top: 20px;
 }
 
 @media screen and (max-device-width: 1024px) and (min-width: 600px) {
@@ -148,6 +311,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     z-index: 1;
+    height: 52vh;
   }
   .c-navbar__image {
     width: 84px;
@@ -170,12 +334,27 @@
   }
   .c-banner__heading {
     position: absolute;
-    left: 57%;
-    top: 36%;
+    left: 31%;
+    top: 40%;
     -webkit-transform: translate(-23%, -50%);
     transform: translate(-19%, -50%);
     z-index: 0;
-    font-family: "Poppins";
+    line-height: 54px;
+  }
+  .c-banner__contact {
+    padding: 10px 33px;
+    background: none;
+    color: white;
+    border: 2px solid;
+  }
+  .c-banner__click {
+    padding: 10px 33px;
+    background: none;
+    color: white;
+    border: 2px solid;
+  }
+  .c-about__aboutbgimage {
+    height: 30vh;
   }
 }
 
@@ -243,17 +422,64 @@
   }
   .c-banner__background {
     height: 30vh;
-    background-size: 150%;
   }
   .c-banner__heading {
     position: absolute;
-    left: 57%;
-    top: 26%;
+    left: 31%;
+    top: 30%;
     -webkit-transform: translate(-23%, -50%);
     transform: translate(-16%, -50%);
     z-index: 0;
-    font-family: "Poppins";
-    font-size: 8px;
+    line-height: 23px;
+  }
+  .c-banner h1 {
+    font-size: 24px;
+  }
+  .c-banner h2 {
+    font-size: 12px;
+  }
+  .c-banner__contact {
+    padding: 7px 15px;
+    background: none;
+    color: white;
+    border: 2px solid;
+  }
+  .c-banner__click {
+    padding: 7px 19px;
+    margin-left: 5px;
+    background: none;
+    color: white;
+    border: 2px solid;
+  }
+  .c-banner__button {
+    margin-top: 0;
+  }
+  .c-help h1 {
+    font-size: 26px;
+  }
+  .c-help h2 {
+    font-size: 16px;
+  }
+  .c-help__nutritionpartone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .c-help__nutritionpartsecond {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .c-about__aboutbgimage {
+    height: 16vh;
+  }
+  .c-about__description {
+    margin-top: 45px;
+  }
+  .c-about__aboutus-button {
+    padding: 2px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
